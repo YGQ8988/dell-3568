@@ -4,15 +4,16 @@
 [Dell-3568](https://github.com/YGQ8988/dell-3568)
 
 ### 主要配置信息
-```
-处理器:I5-7200U
-集显:英特尔 HD Graphics 620 (platform-id:0x59160000)
-网卡:DW1560
-声卡:ALC3234
-硬盘:Samsung EVO 850 250G(SSD)
-内存:4G*2(镁光DDR3L)
-显示器:1920*1080(15.6 英寸)
-```
+
+| 配件名      | 型号    |
+| --------- | -------- | 
+| CPU    | I5-7200U  |
+| 显卡     | HD Graphics 620 (platform-id:0x59160000)     |   
+| 网卡     | DW1560 | 
+| 声卡 | ALC3234    |
+| 硬盘 | Samsung EVO 850 250G(SSD)    |
+| 内存 | 4G*2(镁光DDR3L)    |
+| 显示器 | 1920x1080(15.6 英寸)    |
 
 ### 说明
 
@@ -20,44 +21,93 @@
 
 目录下文件夹已区分10.13和10.14EFI
 
+### 工作的功能
+
+1、HDMI外接显示器正常(HDMI外放未测试，测试显示器纯显示器无喇叭)
+
+2、自动锁屏休眠正常
+
+3、盒盖休眠正常(但是好像不是立马休眠，需等待一段时间)，本人使用基本不休眠，不使用时锁屏或关机
+
+4、喇叭外放最大音量正常，麦克风正常
+
+5、集显驱动正常
+
+6、电池驱动正常
+
+7、无线网卡，蓝牙正常(已更换为DW1560)
+
+8、摄像头正常
+
+9、打印机正常
+
 ### 已知问题
 
-1、绝大部分耳机杂音，
+1、绝大部分耳机破音，测试了四副耳机只有一副放音乐正常，其他均破音
 
-2、小太阳无驱动成功，使用AppleBacklightFixup修复无效
+2、小太阳无驱动成功，使用AppleBacklightFixup修复无效，直接开启AddPLNF无效
 
 3、点击声音里面，输出，输入可能会存在死机
 
-#### 希望存在同款机型，且不存在以上问题的机油提供解决方案。
+#### 希望存在同款机型，且不存在以上问题的机油分享解决方案。
+
+#### 欢迎同款笔记本分享安装，完善心得。本人QQ：898829225
+
+#### 如您有更完善的EFI，可联系我，收录此Git仓库，方便更多的人使用黑苹果系统
 
 ### 使用方法
 
-1、EFI
+1、下载EFI
+
+  一、首先保证电脑上已安装git功能，安装教程自行百度(已有此功能请直接走后续步骤)
+  
+  二、打开Git Bash窗口，执行以下命令
+  ```
+  git clone https://github.com/YGQ8988/dell-3568.git
+  ```
+  三、把需要使用的EFI文件名改为EFI，替换已刻入好的U盘内或安装完成后直接放入系统EFI目录
+  
+2、刻入U盘
+
 刻入工具为Etcher，镜像均为黑果小兵制作。镜像自行前往黑果小兵博客下载。
 
 [etcher](https://etcher.io/)
 
 [黑果小兵](http://daliansky.github.io)
 
-2、声卡、耳机
+3、声卡、耳机
 
 声卡ID注入为3，本人电脑下只有一副耳机使用正常，测试四副耳机其中三副播放音乐破音，音调不正常(暂不知何原因)
 
-AppleHDA为老版本，安装完成后需替换/S/L/E目录下AppleHDA。
+AppleHDA为老版本，安装完成后需替换/S/L/E目录下AppleHDA，替换完成后重构缓存
 
-3、一键开启HIDPI并注入EDID
+在终端依次执行以下命令
+```
+#!/bin/sh
+sudo chmod -Rf 755 /S*/L*/E*
+sudo chown -Rf 0:0 /S*/L*/E*
+sudo chmod -Rf 755 /L*/E*
+sudo chown -Rf 0:0 /L*/E*
+sudo rm -Rf /S*/L*/PrelinkedKernels/*
+sudo rm -Rf /S*/L*/Caches/com.apple.kext.caches/*
+sudo touch -f /S*/L*/E*
+sudo touch -f /L*/E*
+sudo kextcache -Boot -U /
+```
+
+4、一键开启HIDPI并注入EDID
 
 此一键命令可开启接近原生的HIDPI设置，不需要RDM软件即可在系统显示器设置中设置
 
 [一键开启HIDPI并注入EDID](https://zhih.me/one-key-hidpi/)
 
-4、DW1560驱动
+5、DW1560驱动
 
 Clover内已集成DW1560网卡驱动，如存在休眠后蓝牙无效，请使用黑果小兵博客内教程修复。
 
 [Broadcom BCM94352z/DW1560驱动新姿势新方法](https://blog.daliansky.net/Broadcom-BCM94352z-DW1560-drive-new-posture.html)
 
-5、安装过程中其他问题
+6、安装过程中其他问题
 
 参照黑果小兵博客内教程解决，传送地址如下。
 
