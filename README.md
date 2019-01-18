@@ -8,7 +8,7 @@
 | 配件名      | 型号    |
 | --------- | -------- | 
 | CPU    | I5-7200U  |
-| 显卡     | HD Graphics 620 (platform-id:0x191b0000)     |   
+| 显卡     | HD Graphics 620 (platform-id:0x59160000)     |   
 | 网卡     | DW1560 | 
 | 声卡 | ALC3234    |
 | 硬盘 | Samsung EVO 850 250G(SSD)    |
@@ -43,13 +43,8 @@
 
 10、小太阳亮度调节正常
 
-### 已知问题
 
-1、绝大部分耳机破音，测试了四副耳机只有一副放音乐正常，其他均破音(如您仿冒声卡驱动成功后也存在耳机破音，可尝试万能声卡驱动，下文提供解决说明)
-
-2、点击声音里面，输出，输入可能会存在死机
-
-### 声卡决解方案(此方案本人未测试)
+### 如仿冒声卡存在问题可试用决解方案(此方案本人未测试)
 
 1、解压声卡文件夹下VoodooHDA-2.9.1.kext.zip
 
@@ -97,6 +92,8 @@
 
 AppleHDA为老版本，安装完成后需替换/S/L/E目录下AppleHDA，替换完成后重构缓存
 
+缓冲注入教程参照：[Hackintool(原Intel FB-Patcher)使用教程及插入姿势](https://daliansky.github.io/Intel-FB-Patcher-tutorial-and-insertion-pose.html)
+
 在终端依次执行以下命令
 ```
 #!/bin/sh
@@ -130,6 +127,12 @@ Clover内已集成DW1560网卡驱动，如存在休眠后蓝牙无效，请使�
 [10.14.2](https://daliansky.github.io/macOS-Mojave-10.14.2-18C54-official-version-with-Clover-4792-original-image.html)
 
 [10.13.6](https://daliansky.github.io/macOS-High-Sierra-10.13.6-17G2112-Release-Special-with-Clover-4606-original-mirror.html)
+
+### 更新说明
+2019-01-18：
+                替换原有EFI，复用： [xzhih](https://github.com/xzhih) 此GitHubEFI
+                原EFI地址：[dell-7460-7560](https://github.com/xzhih/dell-7460-7560-hackintosh)
+                修改部分：缓冲帧注入声卡ID：3，把触摸板驱动VoodooPS2Controller替换为ApplePS2SmartTouchPad
 
 ### 效果图
 
