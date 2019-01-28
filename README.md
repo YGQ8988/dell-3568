@@ -23,7 +23,7 @@
 
 ### 工作的功能
 
-1、HDMI外接显示器正常(HDMI外放未测试，测试显示器纯显示器无喇叭，注：HDMI外放经测试无效，需求不大可忽略)
+1、HDMI外接显示器正常(HDMI外放正常)
 
 2、自动锁屏休眠正常
 
@@ -124,6 +124,8 @@ Clover内已集成DW1560网卡驱动，如存在休眠后蓝牙无效，请使�
 
 参照黑果小兵博客内教程解决，传送地址如下。
 
+[10.14.3](https://daliansky.github.io/macOS-Mojave-10.14.3-18D42-official-version-with-Clover-4859-original-image.html)
+
 [10.14.2](https://daliansky.github.io/macOS-Mojave-10.14.2-18C54-official-version-with-Clover-4792-original-image.html)
 
 [10.13.6](https://daliansky.github.io/macOS-High-Sierra-10.13.6-17G2112-Release-Special-with-Clover-4606-original-mirror.html)
@@ -147,8 +149,6 @@ Clover内已集成DW1560网卡驱动，如存在休眠后蓝牙无效，请使�
 ![以太网](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E4%BB%A5%E5%A4%AA%E7%BD%91.png)
 
 ![储存](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%82%A8%E5%AD%98.png)
-
-![内建显示器](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%86%85%E5%BB%BA%E6%98%BE%E7%A4%BA%E5%99%A8.png)
 
 ![声卡](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%A3%B0%E5%8D%A1.png)
 
