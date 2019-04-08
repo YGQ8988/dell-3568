@@ -10,6 +10,8 @@
 		<dict>
 			<key>Fixes</key>
 			<dict>
+				<key>AddPNLF</key>
+				<true/>
 				<key>FixRegions</key>
 				<true/>
 			</dict>
@@ -17,21 +19,7 @@
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change _DSM to XSDM</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X0RTTQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WERTTQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change OSID to IDOS</string>
+					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -40,12 +28,12 @@
 					</data>
 					<key>Replace</key>
 					<data>
-					SURPUw==
+					WFNJRA==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change _OSI to XOSI</string>
+					<string>Rename _OSI to XOSI (OS)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -59,30 +47,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change HDAS to HDEF</string>
+					<string>Rename _DSM to XDSM (NVDIMM)</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
-					SERBUw==
+					X0RTTQ==
 					</data>
 					<key>Replace</key>
 					<data>
-					SERFRg==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change HECI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					SEVDSQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					SU1FSQ==
+					WERTTQ==
 					</data>
 				</dict>
 				<dict>
@@ -101,20 +75,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change GFX0 to IGPU</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					R0ZYMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					SUdQVQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change SAT0 to SATA</string>
 					<key>Disabled</key>
 					<false/>
@@ -125,20 +85,6 @@
 					<key>Replace</key>
 					<data>
 					U0FUQQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change 6D03 to 6D00</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					oG2gAw==
-					</data>
-					<key>Replace</key>
-					<data>
-					oG2gAA==
 					</data>
 				</dict>
 				<dict>
@@ -171,7 +117,7 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change _LID0 to _LID</string>
+					<string>change LID0 to _LID</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -181,6 +127,132 @@
 					<key>Replace</key>
 					<data>
 					TElEXw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change Method(GPRW,2,N) to XPRW, pair with SSDT-GPRW.aml</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R1BSVwI=
+					</data>
+					<key>Replace</key>
+					<data>
+					WFBSVwI=
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change HECI to IMEI</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					SEVDSQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					SU1FSQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change ECDV to EC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUNEVg==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUNfXw==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change GPI0 device _STA to XSTA</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X1NUQQCgCZNTQlJHAA==
+					</data>
+					<key>Replace</key>
+					<data>
+					WFNUQQCgCZNTQlJHAA==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change I2C devices _CRS to XCRS</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X0NSUwCgDg==
+					</data>
+					<key>Replace</key>
+					<data>
+					WENSUwCgDg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename EHC1 to EH01 (USB)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename EHC2 to EH02 (USB)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					RUhDMg==
+					</data>
+					<key>Replace</key>
+					<data>
+					RUgwMg==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename XHCI to XHC (USB)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					WEhDSQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WEhD
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename XHC1 to XHC (USB)</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					WEhDMQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WEhD
 					</data>
 				</dict>
 			</array>
@@ -202,17 +274,21 @@
 		</array>
 		<key>FixHeaders</key>
 		<true/>
+		<key>ResetAddress</key>
+		<string>0x0CF9</string>
+		<key>ResetValue</key>
+		<string>0x06</string>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>igfxrst=1</string>
+		<string>gfxrst=1</string>
 		<key>DefaultVolume</key>
-		<string>macOS</string>
+		<string>Macintosh HD</string>
 		<key>NoEarlyProgress</key>
 		<true/>
 		<key>Timeout</key>
-		<integer>1</integer>
+		<integer>5</integer>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -305,18 +381,20 @@
 				<string>Intel HD Graphics 620</string>
 			</dict>
 		</dict>
+		<key>SetIntelBacklight</key>
+		<true/>
+		<key>SetIntelMaxBacklight</key>
+		<true/>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
-			<true/>
+			<false/>
 			<key>FixOwnership</key>
 			<true/>
 			<key>HighCurrent</key>
 			<true/>
 			<key>Inject</key>
 			<true/>
-			<key>NameEH00</key>
-			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<false/>
@@ -373,7 +451,7 @@
 		<key>AppleIntelCPUPM</key>
 		<true/>
 		<key>AppleRTC</key>
-		<false/>
+		<true/>
 		<key>DellSMBIOSPatch</key>
 		<true/>
 		<key>ForceKextsToLoad</key>
