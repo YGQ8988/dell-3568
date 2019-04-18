@@ -1,0 +1,82 @@
+172.30.251.245:7000/gateway/sms/sendSms
+
+
+#下单
+http://172.30.251.245:7000//gateway/account/quick-paygateway/order/pubp/placeOrder
+{
+	"billKey":"00000",
+	"contId":"0004959",
+	"mid":"898460107800170",
+	"orderAmt":"1",
+	"payAmt":"1",
+	"spInstCode":"1001",
+	"tid":"00000170",
+	"tradSrc":"B",
+	"userName":"18257563278",
+	"appName":"DYSMK"
+	
+}
+
+#快捷支付
+http://172.30.251.245:7000/gateway/account/quick-pay
+{
+"transAmt":"1",
+"passwd":"123123",
+"bankCode":"01",
+"carNo":"6216261000000000018",
+"mrchCode":"5021212",
+"mrchName":"6213312",
+"mcc":"712131313",
+"mrchOrderNo":"3028201903081352042194397296",
+}
+
+#登录
+http://172.30.251.245:7000/gateway/user/current/login
+{
+	"userName":"17600220311",
+	"verifyCode":"123456",
+	"appName":"DYSMK",
+	"deviceID":"11111112222222222222",
+	"deviceType":"iPhone"
+}
+
+
+#卫计委
+http://172.30.251.245:7000/gateway/jnadapters/medical/queryOrgs
+{"hospitalMark":""}
+
+
+#职工医疗缴费接口
+http://172.30.251.245:7000/gateway/jnadapters/social/getPayAged
+{   "sfzhm":"370811196902214045",  
+  "zzny": "201801",
+  "qsny": "201801",
+  "nypdbz": "0"
+ }
+
+
+
+
+
+rm -rf /home/dysmk/jnsmk/sendmessage/report/*
+/home/dysmk/Jmeter/bin/jmeter.sh -n -t /home/dysmk/jnsmk/sendmessage/send_message.jmx
+
+
+
+rm -rf /home/dysmk/jnsmk/login/report/*
+/home/dysmk/Jmeter/bin/jmeter.sh -n -t /home/dysmk/jnsmk/login/login.jmx
+
+
+rm -rf /home/dysmk/jnsmk/placeorder/report/*
+/home/dysmk/Jmeter/bin/jmeter.sh -n -t /home/dysmk/jnsmk/placeorder/placeorder.jmx
+
+
+rm -rf /home/dysmk/jnsmk/quick_pay/report/*
+/home/dysmk/Jmeter/bin/jmeter.sh -n -t /home/dysmk/jnsmk/quick_pay/quick_pay.jmx
+
+
+rm -rf /home/dysmk/jnsmk/wjw/report/*
+/home/dysmk/Jmeter/bin/jmeter.sh -n -t /home/dysmk/jnsmk/wjw/wjw.jmx
+
+rm -rf /home/dysmk/jnsmk/social/report/*
+/home/dysmk/Jmeter/bin/jmeter.sh -n -t /home/dysmk/jnsmk/social/social.jmx
