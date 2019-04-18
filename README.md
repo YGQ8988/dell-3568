@@ -43,6 +43,13 @@
 
 10、小太阳亮度调节正常(F11，F12调节)
 
+### 耳机听歌只有伴奏没有人声优先尝试方案
+
+直接解压ALCPlugFix.zip，再执行ALCPlugFix\alc_fix目录下install双击自动安装.command
+
+感谢黑果小兵提供解决方案！！！
+
+[传送门 | ALCPlugFix]([https://github.com/daliansky/ALCPlugFix](https://github.com/daliansky/ALCPlugFix))
 
 ### 如仿冒声卡存在问题可试用决解方案(此方案本人未测试)
 
@@ -138,34 +145,25 @@ Clover内已集成DW1560网卡驱动，如存在休眠后蓝牙无效，请使�
 
 ### 效果图
 
-![桌面](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%A1%8C%E9%9D%A2.png)
+![概览](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%A6%82%E8%A7%88.png)
 
-![菜单](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E7%A8%8B%E5%BA%8F.png)
-
-![USB](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/USB.png)
-
-![WIFI](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/WIFI.png)
+![wifi](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/WiFi.png)
 
 ![以太网](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E4%BB%A5%E5%A4%AA%E7%BD%91.png)
 
-![储存](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%82%A8%E5%AD%98.png)
+![内建显示器](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%86%85%E5%BB%BA%E6%98%BE%E7%A4%BA%E5%99%A8.png)
 
-![声卡](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%A3%B0%E5%8D%A1.png)
-
-![打印机](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%89%93%E5%8D%B0%E6%9C%BA.png)
+![声卡](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E5%A3%B0%E9%9F%B3.png)
 
 ![摄像头](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%91%84%E5%83%8F%E5%A4%B4.png)
 
+![显卡](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%98%BE%E5%8D%A1.png)
+
 ![显示器](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%98%BE%E7%A4%BA%E5%99%A8.png)
 
-![概览](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%A6%82%E8%A7%88.png)
-
-![电源](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E7%94%B5%E6%BA%90.png)
 
 ![蓝牙](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E8%93%9D%E7%89%99.png)
 
-![集显](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E9%9B%86%E6%98%BE.png)
+![桌面](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%A1%8C%E9%9D%A2.png)
 
-![亮度1](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E4%BA%AE%E5%BA%A61.png)
 
-![亮度2](https://github.com/YGQ8988/dell-3568/blob/master/%E6%95%88%E6%9E%9C%E5%9B%BE/%E4%BA%AE%E5%BA%A62.png)
