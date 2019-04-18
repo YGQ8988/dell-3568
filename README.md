@@ -49,7 +49,7 @@
 
 感谢黑果小兵提供解决方案！！！
 
-[传送门 | ALCPlugFix]([https://github.com/daliansky/ALCPlugFix](https://github.com/daliansky/ALCPlugFix))
+[传送门|ALCPlugFix](https://github.com/daliansky/ALCPlugFix)
 
 ### 如仿冒声卡存在问题可试用决解方案(此方案本人未测试)
 
