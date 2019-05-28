@@ -134,14 +134,16 @@ Clover内已集成DW1560网卡驱动，如存在休眠后蓝牙无效，请使�
 [10.13.6](https://daliansky.github.io/macOS-High-Sierra-10.13.6-17G2112-Release-Special-with-Clover-4606-original-mirror.html)
 
 ### 更新说明
-2019-03-07:
-                紧随原作者脚步更新，更新clover主文件，修改核显名称，声卡ID。
-                原EFI地址：[dell-7460-7560](https://github.com/xzhih/dell-7460-7560-hackintosh)
 
-2019-01-18：
-                替换原有EFI，复用： [xzhih](https://github.com/xzhih) 此GitHubEFI
-                原EFI地址：[dell-7460-7560](https://github.com/xzhih/dell-7460-7560-hackintosh)
-                修改部分：缓冲帧注入声卡ID：3，把触摸板驱动VoodooPS2Controller替换为ApplePS2SmartTouchPad
+* 2019-05-28:
+ 更新clover版本为4934，常规驱动版本更新。
+* 2019-03-07:
+紧随原作者脚步更新，更新clover主文件，修改核显名称，声卡ID。
+原EFI地址：[dell-7460-7560](https://github.com/xzhih/dell-7460-7560-hackintosh)
+* 2019-01-18：
+替换原有EFI，复用： [xzhih](https://github.com/xzhih) 此GitHubEFI
+原EFI地址：[dell-7460-7560](https://github.com/xzhih/dell-7460-7560-hackintosh)
+修改部分：缓冲帧注入声卡ID：3
 
 ### 效果图
 
